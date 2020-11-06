@@ -127,7 +127,7 @@ let printPhone = function(){
     document.write("<br>Cor: " + phone.cor);
     document.write("<br>Características: ");
     document.write("<br>")
-    //ACABAR DE PASSAR
+    //ACABAR DE PASSAR da aula!
 }
 
 printPhone();
