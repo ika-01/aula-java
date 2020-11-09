@@ -126,8 +126,18 @@ let printPhone = function(){
     document.write("<br>Modelo: " + +phone.modelo);
     document.write("<br>Cor: " + phone.cor);
     document.write("<br>Características: ");
-    document.write("<br>")
-    //ACABAR DE PASSAR da aula!
+    document.write("<br>" + phone.caracteristicas.bluetooth);
+    document.write("<br>" + phone.caracteristicas.wifi);
+    document.write("<br>" + phone.caracteristicas.gps);
+
+    //Se fizeres só assim, diz te que é um objeto:
+    //document.write("<br>" + phone.caracteristicas);
+
+    //Imprimir o Array em separado
+    document.write("<br>Apps: ");
+    phone.apps.forEach(function(x){
+        document.write("<br>"+x);
+    });
 }
 
 printPhone();
